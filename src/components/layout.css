@@ -1,9 +1,6 @@
-.gradient {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #2af598 0%, #009efd 100%);
-}
 html {
+  height: 100%;
+  width: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
@@ -11,11 +8,13 @@ html {
   overflow-y: scroll;
 }
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Lato;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -24,9 +23,9 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #a3aaa7 0%, #20323d 100%);
+  background: linear-gradient(90deg, #a3aaa7 0%, #20323d 100%); */
 }
 article,
 aside,
@@ -603,4 +602,66 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+div#___gatsby {
+  width: 100%;
+  height: 100%;
+}
+
+div#gatsby-focus-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.gray-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #a3aaa7 0%, #20323d 100%);
+}
+
+.gray {
+  width: 100%;
+  height: 100%;
+  background: #cbcfcd;
+}
+
+.gaming {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300% 300%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.myLink {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 1rem;
+  width: 200px;
+  height: 3rem;
+}
+
+.grayLink {
+  background: #cbcfcd;
+}
+
+.grayGradientLink {
+  background: linear-gradient(90deg, #a3aaa7 0%, #20323d 100%);
+}
+
+.rainbowLink {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
